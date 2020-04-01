@@ -5,93 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>World Travel Tour</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-<!--Шапка сайту-->
+<!--Site head-->
     <header>
+        <img src="img/title.jpg" alt="World Travel Tour">
         <nav>
-            <div>
-                <form>
-                    <p><input type="search" name="q" placeholder="Пошук по сайту"> 
-                    <input type="submit" value="найти"></p>
+                <form class="search">
+                    <input type="submit" value="найти">
+                    <input type="search" name="site-search" placeholder="Пошук по сайту"> 
                 </form>
-            </div>
-            <div>
-                <div>
-                    <a fref="index.html">Головна</a>
-                    <a href="#tours">Тури</a>
-                    <a href="#news">Новини</a>
-                    <a href="#blogs">Наш блог</a>
-                    <a href="#aboutus">Про нас</a>
-                    <a href="#contacts">Контакти</a>
-                </div>
-                <p><a href="index.html"><img src="img/title.jpg"> </a></p>
-            </div>
+
+                <ul class="top-menu">
+				    <li><a href="/">Головна</a></li>
+				    <li><a href="#tours">Тури</a></li>
+				    <li><a href="#news">Новини</a></li>
+				    <li><a href="#blogs">Наш блог</a></li>
+                    <li><a href="#aboutus">Про нас</a></li>
+                    <li><a href="#contacts">Контакти</a></li>
+			    </ul>  
         </nav>
-        <div>
+        
     </header>
     <main>
-        <!--Популярне, карусель-->
-            <div><h1>Популярне</h1></div>
-                <article>
-                    <div>31 Травня - 8 Червня 2020 (8 днів)</div>
-                    <div>Данія, Фарерські острови</div>
-                </article>
-                <article>
-                    Фарерські острови: загублений шматочок Європи
-                </article>
-                <article>
-                    900€
-                </article>
-                <img src="img/farer-island.jpeg"> 
-                <button>Замовити</button>
+            <!--Porular,carousel-->
+        <div class="popular">
+            <h1>Популярне</h1>
+                <p>1 Травня - 8 Червня 2020 (8 днів)</p>
+                <p>Данія, Фарерські острови</p>
+                <p>Фарерські острови: загублений шматочок Європи</p>
+            <span>
+                900€
+            </span>
+            <img src="img/farer-island.jpeg" alt="Фарерські острови"> 
+            <button class="button">Замовити</button>
         </div>
-         <!--Блок турів-->
-        <section id="tours">
-            <div>
-                <h1>Тури</h1>
-            </div>
-            <!--блок туру-->
-            <div>
-                <div>
-                    <img src="img/farer-island.jpeg">
-                </div>
-                <div>
-                    <span> 31 Травня - 8 Червня 2020 (8 днів)</span>
-                </div>
-                <div>
+        <!--block tours-->
+        <h2 id="tours">Тури</h2>
+            <div class="tour-list">
+                <article class="tour-card">
+                    <img src="img/farer-island.jpeg" alt="Фарерські острови">
+                    <p> 31 Травня - 8 Червня 2020 (8 днів)</p>
                     <a href="/country/denmark/farer-island.html"> Фарерські острови: загублений шматочок Європи</a>
-                </div>
-                <div>
-                    <article>
-                        Подорож на Фарерські острови – то наче мандрівка в інший світ!
-                    </article>
-                </div>
-                <button>Замовити</button>
+                    <p> Подорож на Фарерські острови – це наче мандрівка в інший світ!</p>
+                    <div class=order-button>
+                        <button class="button tour-button" >Замовити</button>
+                    </div>
+                </article>
+                <article class="tour-card">
+                    <img src="img/farer-island.jpeg" alt="Фарерські острови">
+                    <p> 31 Травня - 8 Червня 2020 (8 днів)</p>
+                    <a href="/country/denmark/farer-island.html"> Фарерські острови: загублений шматочок Європи</a>
+                    <p> Подорож на Фарерські острови – це наче мандрівка в інший світ!</p>
+                    <div class=order-button>
+                        <button class="button tour-button" >Замовити</button>
+                    </div>
+                </article>
+                <article class="tour-card">
+                    <img src="img/farer-island.jpeg" alt="Фарерські острови">
+                    <p> 31 Травня - 8 Червня 2020 (8 днів)</p>
+                    <a href="/country/denmark/farer-island.html"> Фарерські острови: загублений шматочок Європи</a>
+                    <p> Подорож на Фарерські острови – це наче мандрівка в інший світ!</p>
+                    <div class=order-button>
+                        <button class="button tour-button" >Замовити</button>
+                    </div>
+                </article>
+                <article class="tour-card">
+                    <img src="img/farer-island.jpeg" alt="Фарерські острови">
+                    <p> 31 Травня - 8 Червня 2020 (8 днів)</p>
+                    <a href="/country/denmark/farer-island.html"> Фарерські острови: загублений шматочок Європи</a>
+                    <p> Подорож на Фарерські острови – це наче мандрівка в інший світ!</p>
+                    <div class=order-button>
+                        <button class="button tour-button" >Замовити</button>
+                    </div>
+                </article>
             </div>
         </section>
-        <!--блок новин-->
+        <!--News block-->
         <section id="news">
             <div>
                 <div>
-                    <h1>Новини</h1>
+                    <h2>Новини</h2>
                 </div>
                 <div>
-                    <img src="img/news.jpg">
+                    <img src="img/news.jpg" alt="новини">
                 </div>
                 <div>
                     <span> Ryanair, МАУ, SkyUp та Wizz Air призупиняють виконання своїх рейсів! Як повернути кошти.</span>
                 </div>
             </div>
         </section>
-        <!--блок блогу-->
+        <!--blogs block-->
         <section id="blogs">
             <div>
                 <div>
-                    <h1>Наг Блог</h1>
+                    <h2>Наг Блог</h2>
                 </div>
                 <div>
-                    <img src="img/blog.jpg">
+                    <img src="img/blog.jpg" alt="блог">
                 </div>
                 <div>
                     <span> 24 ГРУ, 2016
@@ -99,14 +111,12 @@
                 </div>
             </div>
         </section>
-           <!--про нас-->
+           <!--about us-->
         <section id="aboutus">
             <div>
-                <div>
-                    <h1>Про Нас</h1>
-                </div>
-                <div>
-                    <article>Ми є агенцією, яка є на ринку ще з 2001 року.
+                <h2>Про Нас</h2>
+                    <article>
+                        Ми є агенцією, яка є на ринку ще з 2001 року.
 
 Відтепер, туристична агенція "World Travel Tour" відкрилась у Львові (на Сихові).
 
@@ -114,27 +124,25 @@
 
 Ми прагнемо бути оригінальними, тому пропонуємо тури не тільки по масових напрямках, а і авторські та унікальні тури, яких ви не знайдете в жодній іншій турагенції.
 
-"World Travel Tour" - туристична компанія,яка змінює життя і ламає стереотипи. З нами подорожують тисячі туристів, приєднуйтесь!</article>
-                </div>
+"World Travel Tour" - туристична компанія,яка змінює життя і ламає стереотипи. З нами подорожують тисячі туристів, приєднуйтесь!
+                    </article>
             </div>
         </section>
-            <!--Контакти-->
+            <!--contacts-->
         <section id="contacts">
             <div>
                 <div>
-                    <h2>Як до нас доїхати</h2>
+                    <h3>Як до нас доїхати</h3>
                 </div>
-                    <imiframe src="https://www.google.com/maps/place/%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2,+%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+79000/@49.8182985,24.0570743,17.04z/data=!4m5!3m4!1s0x473add7c09109a57:0x4223c517012378e2!8m2!3d49.839683!4d24.029717">
-                    </imiframe>
                 <div>
-                    <h2>Контакти</h2>
+                    <h3>Контакти</h3>
                         <p> м. Львів, Сихів, пр. Червоної Калини, 46</p>
                         <p>+38 (099) 999-99-99</p>
                         <p>+38 (099) 999-99-99</p>
                         <p>info@travelwt.ua</p>
                 </div>
                 <div>
-                    <h2>Час роботи</h2>
+                    <h3>Час роботи</h3>
                         <p>Пн-пт: 10:00-19:00</p>
                         <p>Сб: 11:00-15:00 (за вимогою)</p>
                         <p>Нд: вихідний</p>
@@ -144,7 +152,7 @@
     </main>
     <footer>
         <div>
-            <h2>Хочете бути в курсі найгрячіших пропозицій!</h2>
+            <h3>Хочете бути в курсі найгрячіших пропозицій!</h3>
                 <form action="https://formspree.io/xdodqgjj" method="POST">
                         <input type="text" name="user_name" placeholder="Name" required="" autofocus="">
                         <input type="email" name="user_email" placeholder="Email" required="">
@@ -153,7 +161,7 @@
                         <textarea name="message" rows="4" cols="30" placeholder="Massage"></textarea>
                         <input type="submit" value="Send" onclick="alert('Thanks for the feedback!')">
                 </form>
-    </footer>
-    
+        </div>
+    </footer>  
 </body>
 </html>
